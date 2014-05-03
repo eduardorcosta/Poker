@@ -1,0 +1,7 @@
+/Users/eduardo/Projetos/FileSystemWatcher/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Projetos/FileSystemWatcher/obj/Debug/FileChangeNotifier.frmNotifier.resources
+/Users/eduardo/Projetos/FileSystemWatcher/obj/Debug/FileSystemWatcher.Properties.Resources.resources
+/Users/eduardo/Projetos/FileSystemWatcher/bin/Debug/FileSystemWatcher.exe.mdb
+/Users/eduardo/Projetos/FileSystemWatcher/bin/Debug/FileSystemWatcher.exe
+/Users/eduardo/Projetos/FileSystemWatcher/obj/Debug/FileSystemWatcher.exe
+/Users/eduardo/Projetos/FileSystemWatcher/obj/Debug/FileSystemWatcher.exe.mdb

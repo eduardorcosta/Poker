@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Library/Frameworks/Mono.framework/Versions/3.2.6/lib/mono/4.0/Microsoft.Common.targets">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="FormMain.cs" Line="1" Column="1" />
+      <File FileName="Properties/Resources.resx" Line="96" Column="66" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/3.2.6/lib/mono/4.0/Microsoft.Common.targets" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
