@@ -1,0 +1,6 @@
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsApp/obj/Debug/MultiOddsApp.Form1.resources
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsApp/obj/Debug/MultiOddsApp.Properties.Resources.resources
+/Users/eduardo/Projects/Hand Evaluator/bin/Debug/MultiOddsApp.exe.mdb
+/Users/eduardo/Projects/Hand Evaluator/bin/Debug/MultiOddsApp.exe
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsApp/obj/Debug/MultiOddsApp.exe
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsApp/obj/Debug/MultiOddsApp.exe.mdb

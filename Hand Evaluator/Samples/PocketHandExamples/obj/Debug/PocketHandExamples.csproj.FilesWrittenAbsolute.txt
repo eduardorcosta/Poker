@@ -1,0 +1,6 @@
+/Users/eduardo/Projects/Hand Evaluator/Samples/PocketHandExamples/bin/Debug/PocketHandExamples.exe.mdb
+/Users/eduardo/Projects/Hand Evaluator/Samples/PocketHandExamples/bin/Debug/PocketHandExamples.exe
+/Users/eduardo/Projects/Hand Evaluator/Samples/PocketHandExamples/obj/Debug/PocketHandExamples.exe
+/Users/eduardo/Projects/Hand Evaluator/Samples/PocketHandExamples/obj/Debug/PocketHandExamples.exe.mdb
+/Users/eduardo/Projects/Hand Evaluator/Samples/PocketHandExamples/bin/Debug/HandEvaluator.dll
+/Users/eduardo/Projects/Hand Evaluator/Samples/PocketHandExamples/bin/Debug/HandEvaluator.dll.mdb

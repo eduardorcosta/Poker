@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OddsGridApp</name>
+    </assembly>
+    <members>
+        <member name="T:OddsGridApp.Form1">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:OddsGridApp.Form1.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:OddsGridApp.Form1.PocketCards_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            </summary>
+            <param name="sender">
+            </param>
+            <param name="e">
+            </param>
+        </member>
+        <member name="M:OddsGridApp.Form1.Board_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            </summary>
+            <param name="sender">
+            </param>
+            <param name="e">
+            </param>
+        </member>
+        <member name="M:OddsGridApp.Form1.OpponentCards_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            </summary>
+            <param name="sender">
+            </param>
+            <param name="e">
+            </param>
+        </member>
+        <member name="M:OddsGridApp.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            </summary>
+            <param name="sender">
+            </param>
+            <param name="e">
+            </param>
+        </member>
+        <member name="F:OddsGridApp.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OddsGridApp.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OddsGridApp.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:OddsGridApp.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

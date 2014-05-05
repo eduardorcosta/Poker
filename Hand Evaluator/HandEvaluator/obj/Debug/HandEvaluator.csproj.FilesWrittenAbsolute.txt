@@ -1,0 +1,4 @@
+/Users/eduardo/Projects/Hand Evaluator/HandEvaluator/bin/Debug/HandEvaluator.dll.mdb
+/Users/eduardo/Projects/Hand Evaluator/HandEvaluator/bin/Debug/HandEvaluator.dll
+/Users/eduardo/Projects/Hand Evaluator/HandEvaluator/obj/Debug/HandEvaluator.dll
+/Users/eduardo/Projects/Hand Evaluator/HandEvaluator/obj/Debug/HandEvaluator.dll.mdb

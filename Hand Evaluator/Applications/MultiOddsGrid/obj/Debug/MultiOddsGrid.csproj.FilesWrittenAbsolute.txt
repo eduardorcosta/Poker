@@ -1,0 +1,5 @@
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsGrid/obj/Debug/MultiOddsGrid.UserControl1.resources
+/Users/eduardo/Projects/Hand Evaluator/bin/Debug/MultiOddsGrid.dll.mdb
+/Users/eduardo/Projects/Hand Evaluator/bin/Debug/MultiOddsGrid.dll
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsGrid/obj/Debug/MultiOddsGrid.dll
+/Users/eduardo/Projects/Hand Evaluator/Applications/MultiOddsGrid/obj/Debug/MultiOddsGrid.dll.mdb

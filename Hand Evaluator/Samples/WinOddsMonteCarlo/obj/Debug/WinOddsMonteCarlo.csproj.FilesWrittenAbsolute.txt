@@ -1,0 +1,6 @@
+/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMonteCarlo/bin/Debug/WinOddsMonteCarlo.exe.mdb
+/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMonteCarlo/bin/Debug/WinOddsMonteCarlo.exe
+/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMonteCarlo/obj/Debug/WinOddsMonteCarlo.exe
+/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMonteCarlo/obj/Debug/WinOddsMonteCarlo.exe.mdb
+/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMonteCarlo/bin/Debug/HandEvaluator.dll
+/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMonteCarlo/bin/Debug/HandEvaluator.dll.mdb
