@@ -1,6 +1,0 @@
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleOpponents/bin/Debug/WinOddsMultipleOpponents.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleOpponents/bin/Debug/WinOddsMultipleOpponents.exe
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleOpponents/obj/Debug/WinOddsMultipleOpponents.exe
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleOpponents/obj/Debug/WinOddsMultipleOpponents.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleOpponents/bin/Debug/HandEvaluator.dll
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleOpponents/bin/Debug/HandEvaluator.dll.mdb

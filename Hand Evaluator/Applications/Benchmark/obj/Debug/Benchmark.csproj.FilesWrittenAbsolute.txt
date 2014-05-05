@@ -1,6 +1,0 @@
-/Users/eduardo/Projects/Hand Evaluator/Applications/Benchmark/obj/Debug/Benchmark.Form1.resources
-/Users/eduardo/Projects/Hand Evaluator/Applications/Benchmark/obj/Debug/Benchmark.Properties.Resources.resources
-/Users/eduardo/Projects/Hand Evaluator/bin/Debug/Benchmark.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/bin/Debug/Benchmark.exe
-/Users/eduardo/Projects/Hand Evaluator/Applications/Benchmark/obj/Debug/Benchmark.exe
-/Users/eduardo/Projects/Hand Evaluator/Applications/Benchmark/obj/Debug/Benchmark.exe.mdb

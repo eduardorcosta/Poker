@@ -1,6 +1,0 @@
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleThreads/bin/Debug/WinOddsMultipleThreads.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleThreads/bin/Debug/WinOddsMultipleThreads.exe
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleThreads/obj/Debug/WinOddsMultipleThreads.exe
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleThreads/obj/Debug/WinOddsMultipleThreads.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleThreads/bin/Debug/HandEvaluator.dll
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsMultipleThreads/bin/Debug/HandEvaluator.dll.mdb

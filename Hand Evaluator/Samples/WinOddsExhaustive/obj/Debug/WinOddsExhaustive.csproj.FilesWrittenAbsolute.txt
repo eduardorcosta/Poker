@@ -1,6 +1,0 @@
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsExhaustive/bin/Debug/WinOddsExhaustive.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsExhaustive/bin/Debug/WinOddsExhaustive.exe
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsExhaustive/obj/Debug/WinOddsExhaustive.exe
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsExhaustive/obj/Debug/WinOddsExhaustive.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsExhaustive/bin/Debug/HandEvaluator.dll
-/Users/eduardo/Projects/Hand Evaluator/Samples/WinOddsExhaustive/bin/Debug/HandEvaluator.dll.mdb

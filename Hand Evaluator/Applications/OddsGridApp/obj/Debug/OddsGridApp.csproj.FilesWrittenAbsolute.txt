@@ -1,6 +1,0 @@
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGridApp/obj/Debug/OddsGridApp.Form1.resources
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGridApp/obj/Debug/OddsGridApp.Properties.Resources.resources
-/Users/eduardo/Projects/Hand Evaluator/Applications/bin/Debug/OddsGridApp.exe.mdb
-/Users/eduardo/Projects/Hand Evaluator/Applications/bin/Debug/OddsGridApp.exe
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGridApp/obj/Debug/OddsGridApp.exe
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGridApp/obj/Debug/OddsGridApp.exe.mdb

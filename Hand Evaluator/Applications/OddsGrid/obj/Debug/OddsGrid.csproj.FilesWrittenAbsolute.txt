@@ -1,5 +1,0 @@
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGrid/obj/Debug/OddsGrid.OddsGrid.resources
-/Users/eduardo/Projects/Hand Evaluator/bin/Debug/OddsGrid.dll.mdb
-/Users/eduardo/Projects/Hand Evaluator/bin/Debug/OddsGrid.dll
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGrid/obj/Debug/OddsGrid.dll
-/Users/eduardo/Projects/Hand Evaluator/Applications/OddsGrid/obj/Debug/OddsGrid.dll.mdb
