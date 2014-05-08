@@ -1,0 +1,4 @@
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\PokerSharp-master\obj\x86\Debug\Poker3.exe
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\PokerSharp-master\bin\Debug\Poker3.exe
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\PokerSharp-master\bin\Debug\Poker3.pdb
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\PokerSharp-master\obj\x86\Debug\Poker3.pdb

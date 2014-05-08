@@ -1,0 +1,34 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\bin\Release\Tables.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\bin\Release\Users.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\bin\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\bin\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\bin\Release\Tables.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\bin\Release\Users.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\bin\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\bin\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\bin\Release\Tables.xml
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\bin\Release\Users.xml
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\bin\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\bin\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\MY POKER PROJECT\Server\Source\Server\obj\Release\ResolveAssemblyReference.cache
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\obj\Release\PokerHost.exe
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\obj\Release\PokerHost.pdb
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\Tables.xml
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\Users.xml
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\PokerHost.exe
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\PokerHost.pdb
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\Tables.xml
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\Users.xml
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\PokerHost.exe
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\bin\Release\PokerHost.pdb
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\obj\Release\ResolveAssemblyReference.cache
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\obj\Release\PokerHost.exe
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Server\Source\Server\obj\Release\PokerHost.pdb

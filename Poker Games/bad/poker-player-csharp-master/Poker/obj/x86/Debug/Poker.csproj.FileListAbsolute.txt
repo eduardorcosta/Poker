@@ -1,0 +1,5 @@
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\poker-player-csharp-master\Poker\obj\x86\Debug\Poker.exe
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\poker-player-csharp-master\Poker\bin\Debug\Poker.exe
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\poker-player-csharp-master\Poker\bin\Debug\Poker.pdb
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\poker-player-csharp-master\Poker\obj\x86\Debug\Poker.csprojResolveAssemblyReference.cache
+Z:\eduardo On My Mac\Projects\Poker\Poker Games\poker-player-csharp-master\Poker\obj\x86\Debug\Poker.pdb

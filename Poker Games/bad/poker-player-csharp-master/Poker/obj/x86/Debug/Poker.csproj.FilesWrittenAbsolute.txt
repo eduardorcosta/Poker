@@ -1,0 +1,15 @@
+/Users/eduardo/Downloads/poker-player-csharp-master/Poker/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Downloads/poker-player-csharp-master/Poker/bin/Debug/Poker.exe.mdb
+/Users/eduardo/Downloads/poker-player-csharp-master/Poker/bin/Debug/Poker.exe
+/Users/eduardo/Downloads/poker-player-csharp-master/Poker/obj/x86/Debug/Poker.exe
+/Users/eduardo/Downloads/poker-player-csharp-master/Poker/obj/x86/Debug/Poker.exe.mdb
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/poker-player-csharp-master/Poker/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/poker-player-csharp-master/Poker/bin/Debug/Poker.exe.mdb
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/poker-player-csharp-master/Poker/bin/Debug/Poker.exe
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/poker-player-csharp-master/Poker/obj/x86/Debug/Poker.exe
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/poker-player-csharp-master/Poker/obj/x86/Debug/Poker.exe.mdb
+/Users/eduardo/Projects/Poker/Poker Games/poker-player-csharp-master/Poker/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Projects/Poker/Poker Games/poker-player-csharp-master/Poker/bin/Debug/Poker.exe.mdb
+/Users/eduardo/Projects/Poker/Poker Games/poker-player-csharp-master/Poker/bin/Debug/Poker.exe
+/Users/eduardo/Projects/Poker/Poker Games/poker-player-csharp-master/Poker/obj/x86/Debug/Poker.exe
+/Users/eduardo/Projects/Poker/Poker Games/poker-player-csharp-master/Poker/obj/x86/Debug/Poker.exe.mdb
