@@ -49,8 +49,8 @@ namespace Client
             }
             Log.Clear();
             ProcessDelegate = new VoidDelegate(Process);
-            Listener = new Thread(Listen);
-            Listener.Start();
+            //Listener = new Thread(Listen);
+            //Listener.Start();
         }
 
         public void Listen()
@@ -63,7 +63,7 @@ namespace Client
                     {
 
                         Invoke(ProcessDelegate, rec);
-                        //Thread.Sleep(3000);//sleep(1000);
+                        Thread.Sleep(100);//sleep(1000);
                         //rec = "";
                     }
                     catch
@@ -274,6 +274,7 @@ namespace Client
                     RaiseBar.Hide();
                     RaiseAmount.Hide();
                 }
+                //Thread.Sleep(10000);
             }
             else if (command[0] == "Call") // Call$position$amount
             {
@@ -376,11 +377,44 @@ namespace Client
             //lobby.Show();
         }
 
+        private static int act=0;
+        private static string[] acoes = {
+"@nada1$",
+"@nada2$",
+"Sitting$0$eduardo$100$",
+"Joined$1$teste1a$200$",
+"Joined$2$teste2b$400$",
+"Joined$3$teste3c$500$", 
+"Joined$4$teste4d$500$", 
+"Joined$5$teste5e$500$",
+"Joined$6$teste6f$500$",
+"Joined$7$teste7f$500$",
+"Button$1$",
+"Dealer$1$",
+"SmallBlind$2$25$",
+"BigBlind$3$50$",
+"Hand$1$14$1$14$2$",
+"Hand$2$13$1$13$2$",
+"Playing$1$",
+"Waiting$50$75$",
+"Playing$2$",
+"Waiting$50$75$"
+        };
         private void Sit_Click(object sender, EventArgs e)
         {
-            I.Write("Sit$");
-            Sit.Hide();
-            Stand.Show();
+            //I.Write("Sit$");
+            if (act < acoes.Length-1)
+            {
+                I.Write(acoes[act]);
+                act++;
+            }
+            else
+                act = 0;
+
+            //Sit.Hide();
+            //Stand.Show();
+            Invoke(ProcessDelegate, acoes[act]);//I.Read());
+
         }
 
         private void Call_Click(object sender, EventArgs e)

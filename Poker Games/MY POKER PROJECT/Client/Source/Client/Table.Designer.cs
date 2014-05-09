@@ -138,7 +138,7 @@
             this.Sit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sit.BackgroundImage")));
             this.Sit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Sit.Location = new System.Drawing.Point(672, 423);
-            this.Sit.Name = "Sit";
+            this.Sit.Name = "Play";
             this.Sit.Size = new System.Drawing.Size(108, 28);
             this.Sit.TabIndex = 8;
             this.Sit.UseVisualStyleBackColor = false;

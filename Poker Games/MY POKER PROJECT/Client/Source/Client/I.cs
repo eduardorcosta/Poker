@@ -7,8 +7,12 @@ namespace Client
     static class I
     {
         //static TcpClient server = new TcpClient();
-        static StreamWriter sw;
-        static StreamReader sr;
+        //static StreamWriter sw;
+        static TextWriter sw;//stringWriter = new StringWriter();
+        static TextReader sr;
+        static string tmp;//Stream ("");
+        
+
         static string name;
         static int money;
         static string infile="in.txt";
@@ -17,9 +21,13 @@ namespace Client
         public static void Initialize()
         {
 			//server.Connect(System.Net.IPAddress.Parse("127.0.0.1"), 55555);
-			sw = new StreamWriter(infile);//server.GetStream());
-			sw.AutoFlush = true;
-			sr = new StreamReader(outfile);//server.GetStream());
+			//sw = new string();//infile);//server.GetStream());
+			//sw.AutoFlush = true;
+            //sw = new string("a");//
+            tmp = " ";
+            //null;//new string.emptt=("");
+            //sw = new StringWriter();// new StreamWriter("");
+			//sr;// = new StringReader();//server.GetStream());
         }
 
         public static string Name
@@ -27,7 +35,11 @@ namespace Client
             get { return name; }
             set { name = value; }
         }
-
+        //public static string sw
+        //{
+        //    get {return _sw;}
+        //    set{ _sw=sw; }
+        //}
         public static int Money
         {
             get { return money; }
@@ -36,12 +48,14 @@ namespace Client
 
         public static void Write(string a)
         {
-            sw.WriteLine(a);
+            //sw.WriteLine(a);
+            //sw.Write(a);
+            tmp = a;
         }
 
         public static string Read()
         {
-            return (sr.ReadLine());
+            return (tmp);//sr.ToString());
         }
     }
 }
