@@ -34,7 +34,7 @@ namespace Client
                 this.Controls.Add(players[i].Pocket1);
                 this.Controls.Add(players[i].Button);
                 this.Controls.Add(players[i].Action);
-            }              
+            }
             string p = I.Read();
             for (int i = 0; p.IndexOf('@') != -1; i++)
             {
@@ -57,18 +57,18 @@ namespace Client
         {
             string rec;
             while ((rec = I.Read()) != "Removed$")
-            //rec = "Sitting$3$teste$200$";//Sitting$position$name$money$;
-            while (true)
-                try
-                {
+                //rec = "Sitting$3$teste$200$";//Sitting$position$name$money$;
+                //while (true)
+                    try
+                    {
 
-                    Invoke(ProcessDelegate, rec);
-                    //Thread.Sleep(3000);//sleep(1000);
-                    //rec = "";
-                }
-                catch
-                {
-                }
+                        Invoke(ProcessDelegate, rec);
+                        //Thread.Sleep(3000);//sleep(1000);
+                        //rec = "";
+                    }
+                    catch
+                    {
+                    }
         }
 
         public void Process(string a)
