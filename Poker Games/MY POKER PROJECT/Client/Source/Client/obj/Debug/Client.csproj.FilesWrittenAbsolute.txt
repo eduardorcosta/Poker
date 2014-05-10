@@ -61,3 +61,12 @@
 /Users/eduardo/Downloads/MY POKER PROJECT/Client/Source/Client/bin/Debug/Client.exe
 /Users/eduardo/Downloads/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.exe
 /Users/eduardo/Downloads/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.exe.mdb
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.Lobby.resources
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.Login.resources
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.Properties.Resources.resources
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.Table.resources
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/bin/Debug/Client.exe.mdb
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/bin/Debug/Client.exe
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.exe
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Client/Source/Client/obj/Debug/Client.exe.mdb

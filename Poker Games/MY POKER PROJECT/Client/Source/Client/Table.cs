@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
+
 
 namespace Client
 {
@@ -10,7 +12,7 @@ namespace Client
         delegate void VoidDelegate(string a);
         VoidDelegate ProcessDelegate;
         Player[] players = new Player[8];
-        Thread Listener;
+		//Thread Listener;
         //Lobby lobby;
         int button;
         int bb;
@@ -18,23 +20,23 @@ namespace Client
         {
             //this.lobby = lobby;
             InitializeComponent();
-            players[0] = new Player(249, 60);
-            players[1] = new Player(87, 126);
-            players[2] = new Player(87, 309);
-            players[3] = new Player(249, 373);
-            players[4] = new Player(483, 373);
-            players[5] = new Player(667, 309);
-            players[6] = new Player(667, 126);
-            players[7] = new Player(483, 60);
+			players[7] = new Player(249, 60);
+			players[6] = new Player(87, 126);
+			players[5] = new Player(87, 309);
+			players[4] = new Player(249, 373);
+			players[3] = new Player(483, 373);
+			players[2] = new Player(667, 309);
+			players[1] = new Player(667, 126);
+			players[0] = new Player(483, 60);
             for (int i = 0; i < players.Length; i++)
             {
                 this.Controls.Add(players[i].NameAsControl);
                 this.Controls.Add(players[i].MoneyAsControl);
-                this.Controls.Add(players[i].Pocket0);
-                this.Controls.Add(players[i].Pocket1);
+                this.Controls.Add(players[i].HoleCard0);
+                this.Controls.Add(players[i].HoleCard1);
                 this.Controls.Add(players[i].Button);
                 this.Controls.Add(players[i].Action);
-            }
+			}/*
             string p = I.Read();
             for (int i = 0; p.IndexOf('@') != -1; i++)
             {
@@ -46,30 +48,25 @@ namespace Client
             {
                 Process(h.Substring(0, h.IndexOf('@')));
                 h = h.Remove(0, h.IndexOf('@') + 1);
-            }
+            }*/
             Log.Clear();
             ProcessDelegate = new VoidDelegate(Process);
-            //Listener = new Thread(Listen);
-            //Listener.Start();
+			//Listener = new Thread(Listen);
+			//Listener.Start();
         }
 
-        public void Listen()
-        {
-            string rec;
-            while ((rec = I.Read()) != "Removed$")
-                //rec = "Sitting$3$teste$200$";//Sitting$position$name$money$;
-                //while (true)
-                    try
-                    {
-
-                        Invoke(ProcessDelegate, rec);
-                        Thread.Sleep(100);//sleep(1000);
-                        //rec = "";
-                    }
-                    catch
-                    {
-                    }
-        }
+		public void Listen ()
+		{
+			string rec;
+			while ((rec = I.Read ()) != "Removed$")
+				try {
+					I.Clean();
+					Invoke (ProcessDelegate, rec);
+				//Thread.Sleep (100);//sleep(1000);
+					//rec = "";
+				} catch {
+				}
+		}
 
         public void Process(string a)
         {
@@ -82,7 +79,8 @@ namespace Client
             if (command[0] == "Joined") // Joined$position$name$money$
             {
                 int pos = int.Parse(command[1]);
-                players[pos].Name = command[2];
+				players [pos].Posintion = pos;
+				players[pos].Name = command[2];
                 players[pos].Money = int.Parse(command[3]);
                 Write(players[pos].Name + " has joined the table with " + players[pos].Money + "$");
             }
@@ -91,8 +89,8 @@ namespace Client
                 int pos = int.Parse(command[1]);
                 players[pos].Name = command[2];
                 players[pos].Money = int.Parse(command[3]);
-                players[pos].Pocket0.Show();
-                players[pos].Pocket1.Show();
+                players[pos].HoleCard0.Show();
+                players[pos].HoleCard1.Show();
             }
             else if (command[0] == "Left") // Left$position$
             {
@@ -100,8 +98,8 @@ namespace Client
                 Write(players[pos].Name + " has left the table");
                 players[pos].Name = "Open";
                 players[pos].MoneyAsControl.Text = "Seat";
-                players[pos].Pocket0.Hide();
-                players[pos].Pocket1.Hide();
+                players[pos].HoleCard0.Hide();
+                players[pos].HoleCard1.Hide();
                 players[pos].Action.Hide();
             }
             else if (command[0] == "Button") // Button$position$
@@ -119,8 +117,8 @@ namespace Client
                 foreach (Player p in players)
                     if (p.Name != "Open")
                     {
-                        p.Pocket0.Show();
-                        p.Pocket1.Show();
+                        p.HoleCard0.Show();
+                        p.HoleCard1.Show();
                     }
             }
             else if (command[0] == "SmallBlind") // SmallBlind$position$amount$
@@ -146,7 +144,7 @@ namespace Client
             }
             else if (command[0] == "Pocket") // Pocket$id$number(2-14)$shape(1-4)$
             {
-                Image Card = Image.FromFile("Data\\" + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
+				Image Card = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
                 if (command[1] == "0")
                 {
                     Pocket0.BackgroundImage = Card;
@@ -161,8 +159,8 @@ namespace Client
                 }
             }
             else if (command[0] == "Community") // Community$id$number(2-14)$shape(1-4)$
-            {
-                Image Card = Image.FromFile("Data\\" + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
+			{   
+				Image Card = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
                 switch (command[1])
                 {
                     case "0":
@@ -195,8 +193,8 @@ namespace Client
             else if (command[0] == "Hand") // Hand$position$number(2-14)$shape(1-4)$number(2-14)$shape(1-4)$
             {
                 int pos = int.Parse(command[1]);
-                players[pos].Pocket0.BackgroundImage = Image.FromFile("Data\\" + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
-                players[pos].Pocket1.BackgroundImage = Image.FromFile("Data\\" + int.Parse(command[4]) + "_" + int.Parse(command[5]) + ".gif");
+				players[pos].HoleCard0.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
+				players[pos].HoleCard1.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[4]) + "_" + int.Parse(command[5]) + ".gif");
                 Write(players[pos].Name + " shows " + Number(command[2]) + Shape(command[3]) + " " + Number(command[4]) + Shape(command[5]));
             }
             else if (command[0] == "Win") // Win$position$pot$
@@ -210,10 +208,10 @@ namespace Client
                 Pot.Text = "0";
                 foreach (Player p in players)
                 {
-                    p.Pocket0.BackgroundImage = Image.FromFile("Data\\back.jpg");
-                    players[pos].Pocket0.Show();
-                    p.Pocket1.BackgroundImage = Image.FromFile("Data\\back.jpg");
-                    players[pos].Pocket1.Show();
+					p.HoleCard0.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar+"back.jpg");
+                    players[pos].HoleCard0.Show();
+					p.HoleCard1.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar+"back.jpg");
+                    players[pos].HoleCard1.Show();
                     players[pos].Action.Hide();
                 }
                 players[button].Button.Hide();
@@ -297,8 +295,8 @@ namespace Client
             else if (command[0] == "Fold") // Fold$position$
             {
                 int pos = int.Parse(command[1]);
-                players[pos].Pocket0.Hide();
-                players[pos].Pocket1.Hide();
+                players[pos].HoleCard0.Hide();
+                players[pos].HoleCard1.Hide();
                 Write(players[pos].Name + " folds");
                 players[pos].Action.Hide();
             }

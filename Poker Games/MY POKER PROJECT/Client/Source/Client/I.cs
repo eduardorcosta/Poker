@@ -8,15 +8,15 @@ namespace Client
     {
         //static TcpClient server = new TcpClient();
         //static StreamWriter sw;
-        static TextWriter sw;//stringWriter = new StringWriter();
-        static TextReader sr;
+		//static TextWriter sw;//stringWriter = new StringWriter();
+		//static TextReader sr;
         static string tmp;//Stream ("");
         
 
         static string name;
         static int money;
-        static string infile="in.txt";
-        static string outfile = "out.txt";
+		//static string infile="in.txt";
+		//static string outfile = "out.txt";
 
         public static void Initialize()
         {
@@ -57,5 +57,11 @@ namespace Client
         {
             return (tmp);//sr.ToString());
         }
+
+		public static void Clean()
+		{
+			tmp = string.Empty;
+		}
+
     }
 }

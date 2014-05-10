@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{93CD030F-A4A5-4B2B-A980-E24D70B211EA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -38,15 +38,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -107,6 +101,67 @@
     <Compile Include="Table.Designer.cs">
       <DependentUpon>Table.cs</DependentUpon>
     </Compile>
+    <None Include="Data\nova-redbtns.jpg" />
+    <None Include="Data\azure.jpg" />
+    <None Include="Data\shiny.jpg" />
+    <None Include="Data\ordinary.jpg" />
+    <None Include="Data\Metallic-Floor-nova.jpg" />
+    <None Include="Data\fg-border.png" />
+    <None Include="Data\fg.png" />
+    <None Include="Data\border-glow.png" />
+    <None Include="Data\border.png" />
+    <None Include="Data\borderb.png" />
+    <None Include="Data\chat-bubble.png" />
+    <None Include="Data\default-avatar.png" />
+    <None Include="Data\emblem.png" />
+    <None Include="Data\empty-seat.png" />
+    <None Include="Data\empty-seat2.png" />
+    <None Include="Data\note-colored-border-base.bmp" />
+    <None Include="Data\seat.png" />
+    <None Include="Data\seatbold.png" />
+    <None Include="Data\status.png" />
+    <None Include="Data\statusbold.png" />
+    <None Include="Data\tlg-w.png" />
+    <None Include="Data\userface.bmp" />
+    <None Include="Data\table.jpg" />
+    <None Include="Data\chip-d.png" />
+    <None Include="Data\chip0001.png" />
+    <None Include="Data\chip000001.png" />
+    <None Include="Data\chip0005.png" />
+    <None Include="Data\chip000005.png" />
+    <None Include="Data\chip0025.png" />
+    <None Include="Data\chip000025.png" />
+    <None Include="Data\chip0100.png" />
+    <None Include="Data\chip0500.png" />
+    <None Include="Data\chip1000.png" />
+    <None Include="Data\chip5000.png" />
+    <None Include="Data\chip25000.png" />
+    <None Include="Data\chip100000.png" />
+    <None Include="Data\chip500000.png" />
+    <None Include="Data\chip1000000.png" />
+    <None Include="Data\chip5000000.png" />
+    <None Include="Data\chip25000000.png" />
+    <None Include="Data\chip100000000.png" />
+    <None Include="Data\chip500000000.png" />
+    <None Include="Data\chip1000000000.png" />
+    <None Include="Data\chip5000000000.png" />
+    <None Include="Data\chip25000000000.png" />
+    <None Include="Data\chipone.png" />
+    <None Include="Data\mini-dealer.png" />
+    <None Include="Data\mini-dealer2.png" />
+    <None Include="Data\face.png" />
+    <None Include="Data\backward.png" />
+    <None Include="Data\forward.png" />
+    <None Include="Data\link.png" />
+    <None Include="Data\next.png" />
+    <None Include="Data\pause.png" />
+    <None Include="Data\prev.png" />
+    <None Include="Data\r.png" />
+    <None Include="Data\reset.png" />
+    <None Include="Data\restart.png" />
+    <None Include="Data\resume.png" />
+    <None Include="Data\sr-bar.png" />
+    <None Include="Data\sr-slider.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Client-icon.ico" />
