@@ -4,3 +4,8 @@
 /Users/eduardo/Downloads/MY POKER PROJECT/Server/Source/Server/bin/Debug/PokerHost.exe
 /Users/eduardo/Downloads/MY POKER PROJECT/Server/Source/Server/obj/Debug/PokerHost.exe
 /Users/eduardo/Downloads/MY POKER PROJECT/Server/Source/Server/obj/Debug/PokerHost.exe.mdb
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Server/Source/Server/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Server/Source/Server/bin/Debug/PokerHost.exe.mdb
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Server/Source/Server/bin/Debug/PokerHost.exe
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Server/Source/Server/obj/Debug/PokerHost.exe
+/Users/eduardo/Projetos/Poker/Poker/Poker Games/MY POKER PROJECT/Server/Source/Server/obj/Debug/PokerHost.exe.mdb
