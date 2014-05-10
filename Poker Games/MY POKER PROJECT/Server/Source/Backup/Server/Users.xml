@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+  <User>
+    <Username>a</Username>
+    <Password>1234</Password>
+    <Money>400</Money>
+    <Online>0</Online>
+  </User>
+  <User>
+    <Username>b</Username>
+    <Password>1234</Password>
+    <Money>300</Money>
+    <Online>0</Online>
+  </User>
+  <User>
+    <Username>c</Username>
+    <Password>1234</Password>
+    <Money>200</Money>
+    <Online>0</Online>
+  </User>
+</Users>

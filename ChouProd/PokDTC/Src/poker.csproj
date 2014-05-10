@@ -1,0 +1,336 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15972099-1E68-4FFA-84AE-06FEDF09EBEB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>pokDTC.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>pokDTC</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>poker</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>poker.Form1</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\pokDTC.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AggressiveMode.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoSpeech.cs" />
+    <Compile Include="BlindsStructure.cs" />
+    <Compile Include="Card.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChronoCtr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChronoCtr.Designer.cs">
+      <DependentUpon>ChronoCtr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChronoTimer.cs" />
+    <Compile Include="ComInOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommunityCards.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cote.cs" />
+    <Compile Include="CurrentProfil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Deck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicDisplay.cs" />
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FonctionXor.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameAnalyser.cs" />
+    <Compile Include="GameData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HandComparer.cs" />
+    <Compile Include="HtmlWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HtmlWindow.Designer.cs">
+      <DependentUpon>HtmlWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IANames.cs" />
+    <Compile Include="Infos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KnownStats.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LocalPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MailSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailSender.Designer.cs">
+      <DependentUpon>MailSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaList.cs" />
+    <Compile Include="MediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MediaPlayer.Designer.cs">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyMsgBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyRandom.cs" />
+    <Compile Include="NetworkPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Odds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PropertiesGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowHand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpamMe.cs" />
+    <Compile Include="Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestClass.cs" />
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinningPot.cs" />
+    <Compile Include="WinningPotComparer.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChronoCtr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChronoCtr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HtmlWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HtmlWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infos.resx">
+      <DependentUpon>Infos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailSender.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MailSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaPlayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odds.resx">
+      <DependentUpon>Odds.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesGame.resx">
+      <DependentUpon>PropertiesGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowHand.resx">
+      <DependentUpon>ShowHand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\background.jpg" />
+    <None Include="bin\Debug\Extra\buttonB_up.jpg" />
+    <None Include="bin\Debug\Extra\buttonB_over.jpg" />
+    <None Include="bin\Debug\Extra\buttonB_down.jpg" />
+    <None Include="bin\Debug\Extra\SB.png" />
+    <None Include="bin\Debug\Extra\BB.png" />
+    <None Include="bin\Debug\Extra\DEALER.gif" />
+    <Content Include="pokDTC.ico" />
+    <None Include="Resources\newUI_E.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

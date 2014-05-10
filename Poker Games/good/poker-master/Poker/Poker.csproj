@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94D9CD75-BE84-44F3-8501-076A1010C138}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Poker</RootNamespace>
+    <AssemblyName>Poker</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>5BBEC04087ABC36F3B8CB91E56A76E6B2DE1FAD9</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Poker_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileWorkClasses.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameControl.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Render.cs">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stats.Designer.cs">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableElements.cs" />
+    <Compile Include="Table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGame.Designer.cs">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGame.resx">
+      <DependentUpon>NewGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GameResetInterface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubashka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ten-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ten-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eight-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Two-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Five-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Six-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nine-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eight-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Four-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ten-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seven-Hearts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Two-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Six-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Five-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nine-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eight-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Two-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Four-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Six-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Five-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nine-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ten-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Four-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seven-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J-Diamonds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eight-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seven-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Two-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Five-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Six-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nine-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Four-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seven-Spades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A-Clubs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\help.chm" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Poker_TemporaryKey.pfx" />
+    <None Include="Resources\tablebank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

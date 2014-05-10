@@ -1,0 +1,11 @@
+/Users/eduardo/Downloads/PokerSharp-master/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/PokerSharp-master/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/PokerSharp-master/bin/Debug/Poker3.exe.mdb
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/PokerSharp-master/bin/Debug/Poker3.exe
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/PokerSharp-master/obj/x86/Debug/Poker3.exe
+/Volumes/Eduardo Rocha Costa's Time -1/Downloads/PokerSharp-master/obj/x86/Debug/Poker3.exe.mdb
+/Users/eduardo/Projects/Poker/Poker Games/PokerSharp-master/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Projects/Poker/Poker Games/PokerSharp-master/bin/Debug/Poker3.exe.mdb
+/Users/eduardo/Projects/Poker/Poker Games/PokerSharp-master/bin/Debug/Poker3.exe
+/Users/eduardo/Projects/Poker/Poker Games/PokerSharp-master/obj/x86/Debug/Poker3.exe
+/Users/eduardo/Projects/Poker/Poker Games/PokerSharp-master/obj/x86/Debug/Poker3.exe.mdb

@@ -3,3 +3,8 @@
 /Users/eduardo/Projects/systemWatch/systemWatch/bin/Debug/systemWatch.exe
 /Users/eduardo/Projects/systemWatch/systemWatch/obj/x86/Debug/systemWatch.exe
 /Users/eduardo/Projects/systemWatch/systemWatch/obj/x86/Debug/systemWatch.exe.mdb
+/Users/eduardo/Projects/Poker/systemWatch/systemWatch/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eduardo/Projects/Poker/systemWatch/systemWatch/obj/x86/Debug/systemWatch.exe
+/Users/eduardo/Projects/Poker/systemWatch/systemWatch/obj/x86/Debug/systemWatch.exe.mdb
+/Users/eduardo/Projects/Poker/systemWatch/systemWatch/bin/Debug/systemWatch.exe.mdb
+/Users/eduardo/Projects/Poker/systemWatch/systemWatch/bin/Debug/systemWatch.exe

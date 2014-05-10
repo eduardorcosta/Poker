@@ -1,0 +1,14 @@
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/obj/Debug/OSX.IO.FileSystemWatcher.FileSystemWatcher.resources
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.Form1.resources
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.Properties.Resources.resources
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/bin/Debug/FileSystemWatcher.exe.mdb
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/bin/Debug/FileSystemWatcher.exe
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.exe
+/Users/eduardo/Downloads/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.exe.mdb
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/obj/Debug/OSX.IO.FileSystemWatcher.FileSystemWatcher.resources
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.Form1.resources
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.Properties.Resources.resources
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/bin/Debug/FileSystemWatcher.exe.mdb
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/bin/Debug/FileSystemWatcher.exe
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.exe
+/Users/eduardo/Projects/Poker/FileSystemWatcher/FileSystemWatcher/obj/Debug/FileSystemWatcher.exe.mdb

@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PsychicPoker/InputParser.cs">
+    <Files>
+      <File FileName="PsychicPoker/FaceValue.cs" Line="1" Column="1" />
+      <File FileName="PsychicPoker/Hand.cs" Line="1" Column="1" />
+      <File FileName="PsychicPoker/Suit.cs" Line="1" Column="1" />
+      <File FileName="PsychicPoker/Program.cs" Line="1" Column="1" />
+      <File FileName="PsychicPoker/ParseResult.cs" Line="1" Column="1" />
+      <File FileName="PsychicPoker/InvalidInputException.cs" Line="1" Column="1" />
+      <File FileName="PsychicPoker/InputParser.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Projects/Poker/FileSystemWatcher/FileSystemWatcher/HandRead.cs" line="10" offsetX="381" offsetY="135" expression="this.Filename" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

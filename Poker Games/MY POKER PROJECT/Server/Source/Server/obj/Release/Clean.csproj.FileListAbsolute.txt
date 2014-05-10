@@ -1,0 +1,25 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\bin\Release\Tables.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\bin\Release\Users.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\bin\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\bin\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Clean\Clean\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\bin\Release\Tables.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\bin\Release\Users.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\bin\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\bin\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\abc\Clean\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Server\Clean\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Server\Clean\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\obj\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\bin\Release\Tables.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\bin\Release\Users.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\bin\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\bin\Release\PokerHost.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Serveraa\Clean\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\obj\Release\PokerHost.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MY POKER PROJECT\Serveraa\Clean\obj\Release\PokerHost.pdb
