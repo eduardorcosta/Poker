@@ -63,16 +63,17 @@ namespace PokerGame
 
             // Backward Button
             //drawButton0();
-            drawButton(button0);
+            drawButton(button0, global::PokerGame.Properties.Resources.backward, new System.Drawing.Point(20, 50),false);
+
+            drawButton(button2, global::PokerGame.Properties.Resources.reset, new System.Drawing.Point(127,48),true);//false);
 
 
-
-
+/*
             // Stop Button
             System.Drawing.Drawing2D.GraphicsPath g_path2 = new System.Drawing.Drawing2D.GraphicsPath();
             g_path2.AddEllipse(5, 5, 30, 30);
             button2.Region = new Region(g_path2);
-
+            */
             // Forward Button
             System.Drawing.Drawing2D.GraphicsPath g_path3 = new System.Drawing.Drawing2D.GraphicsPath();
             g_path3.AddEllipse(5, 5, 30, 30);
@@ -90,31 +91,50 @@ namespace PokerGame
             g_path5.AddEllipse(5, 5, 30, 30);
             button5.Region = new Region(g_path5);
         }
-        private void drawButton(Button buttonI)
+        private void drawButton(Button buttonI,Bitmap buttonBitmap,Point initialPos,Boolean debug)
         {
+            // sempre comeca no 0,0 pois eh no controle
+            buttonI.Location = new Point(0, 0);
+            // no tamanho do controle sempre
+            Size buttonControlSize = controlsImage.Size;
+            buttonI.Size = buttonControlSize;
+
+
             //Bitmap resume = new Bitmap(global::PokerGame.Properties.Resources.resume);
-            Size backwardButtonSize = controlsImage.Size;
+            
+            // abrir um buraco do tamanho do sprite...
+            Size buttonHoleSize = buttonBitmap.Size;
+            buttonHoleSize.Width = buttonHoleSize.Width / 3 + 1; // tres frames
+            buttonHoleSize.Height = buttonHoleSize.Height + 1; // tres frames
+
 
             //button0.BackColor = System.Drawing.Color.Blue ;
-            System.Drawing.Point resumePos = new System.Drawing.Point(20, 50);
+            //System.Drawing.Point InitialPos = new System.Drawing.Point(20, 50);
             //button0.Location = resumePos;
-            buttonI.Location = new Point(0, 0);
-            buttonI.Size = backwardButtonSize;
-            Bitmap surfaceButton0 = new Bitmap(backwardButtonSize.Width, backwardButtonSize.Height);// mainCanvas.Image = surface;
-            Graphics deviceButton0 = Graphics.FromImage(surfaceButton0);
-            deviceButton0.DrawImage(controlsImage, new Point(0, 0));
-            buttonI.BackgroundImage = surfaceButton0;
-            Point backwardPos = new Point(23 - 2, 55 - 3);//73,42);
-            Rectangle button0Location = new Rectangle(backwardPos, new Size(55, 37));
+            
+            Bitmap surface = new Bitmap(buttonControlSize.Width, buttonControlSize.Height);// mainCanvas.Image = surface;
+            Graphics canvas = Graphics.FromImage(surface);
+            canvas.DrawImage(controlsImage, new Point(0, 0));
+            if (!debug)
+                buttonI.BackgroundImage = surface;
 
-            System.Drawing.Drawing2D.GraphicsPath g_path = new System.Drawing.Drawing2D.GraphicsPath();
+            //Point backwardPos = new Point(23 - 2, 55 - 3);//73,42);
+            //Rectangle button0Location = new Rectangle(initialPos, new Size(55, 37));
+            
+            Rectangle buttonHole = new Rectangle(initialPos, buttonHoleSize);//new Size(55, 37));
+            GraphicsPath g_path = new GraphicsPath();
+            
             //g_path.AddEllipse(5, 5, 30, 30);
             //g_path.AddEllipse(button0Location);
-            g_path.AddRectangle(button0Location);
+            
+            g_path.AddRectangle(buttonHole);
             buttonI.Region = new Region(g_path);
             buttonI.BringToFront();
-            //button0.BackColor = Color.Cyan;
-            deviceButton0.DrawImage(global::PokerGame.Properties.Resources.backward, resumePos);
+            
+            if (debug)
+                button0.BackColor = Color.Cyan;
+            if (!debug)
+                canvas.DrawImage(buttonBitmap,initialPos); //global::PokerGame.Properties.Resources.backward, resumePos);
 
         }
         private void drawButton0()
