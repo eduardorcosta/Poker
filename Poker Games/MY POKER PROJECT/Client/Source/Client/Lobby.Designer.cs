@@ -1,4 +1,4 @@
-﻿namespace Client
+﻿namespace PokerGame
 {
     partial class Lobby
     {

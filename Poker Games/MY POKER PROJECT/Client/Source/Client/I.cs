@@ -2,7 +2,7 @@
 using System.IO;
 using System.Net.Sockets;
 
-namespace Client
+namespace PokerGame
 {
     static class I
     {

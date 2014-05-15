@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 
-namespace Client
+namespace PokerGame
 {
     class Player
     {
@@ -54,7 +54,8 @@ namespace Client
             button.Size = new System.Drawing.Size(15, 14);
             button.Visible = false;
             button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			button.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar+ "chip-d.png");
+            button.BackgroundImage = global::PokerGame.Properties.Resources.chip_d; 
+                //Image.FromFile("Data"+Path.DirectorySeparatorChar+ "chip-d.png");
 
             action.BackColor = System.Drawing.Color.Transparent;
             action.Location = new System.Drawing.Point(x + 7, y + 33);

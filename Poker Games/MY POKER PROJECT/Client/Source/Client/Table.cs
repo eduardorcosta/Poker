@@ -1,42 +1,48 @@
 ﻿using System;
-using System.Drawing;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.IO;
+using System.Drawing;
 
-
-namespace Client
+namespace PokerGame
 {
-    public partial class Table : Form
+    class Table
     {
-        delegate void VoidDelegate(string a);
-        VoidDelegate ProcessDelegate;
-        Player[] players = new Player[8];
-		//Thread Listener;
-        //Lobby lobby;
         int button;
         int bb;
-        public Table()//Lobby lobby)
+        Player[] players = new Player[8];
+
+        /// <summary>
+        /// Todo: Melhorar
+        /// </summary>
+        //VoidDelegate ProcessDelegate;
+        //delegate void VoidDelegate(string a);
+
+        Game _game;
+
+        public Table(Game game)
         {
-            //this.lobby = lobby;
-            InitializeComponent();
-			players[7] = new Player(249, 60);
-			players[6] = new Player(87, 126);
-			players[5] = new Player(87, 309);
-			players[4] = new Player(249, 373);
-			players[3] = new Player(483, 373);
-			players[2] = new Player(667, 309);
-			players[1] = new Player(667, 126);
-			players[0] = new Player(483, 60);
+            _game = game;
+            players[7] = new Player(249, 60);
+            players[6] = new Player(87, 126);
+            players[5] = new Player(87, 309);
+            players[4] = new Player(249, 373);
+            players[3] = new Player(483, 373);
+            players[2] = new Player(667, 309);
+            players[1] = new Player(667, 126);
+            players[0] = new Player(483, 60);
             for (int i = 0; i < players.Length; i++)
             {
-                this.Controls.Add(players[i].NameAsControl);
-                this.Controls.Add(players[i].MoneyAsControl);
-                this.Controls.Add(players[i].HoleCard0);
-                this.Controls.Add(players[i].HoleCard1);
-                this.Controls.Add(players[i].Button);
-                this.Controls.Add(players[i].Action);
-			}/*
+                game.Controls.Add(players[i].NameAsControl);
+                game.Controls.Add(players[i].MoneyAsControl);
+                game.Controls.Add(players[i].HoleCard0);
+                game.Controls.Add(players[i].HoleCard1);
+                game.Controls.Add(players[i].Button);
+                game.Controls.Add(players[i].Action);
+            }/*
             string p = I.Read();
             for (int i = 0; p.IndexOf('@') != -1; i++)
             {
@@ -49,24 +55,34 @@ namespace Client
                 Process(h.Substring(0, h.IndexOf('@')));
                 h = h.Remove(0, h.IndexOf('@') + 1);
             }*/
-            Log.Clear();
-            ProcessDelegate = new VoidDelegate(Process);
-			//Listener = new Thread(Listen);
-			//Listener.Start();
-        }
+            game.Log.Clear();
+            
+            
+            
+            ///Todo: Melhorar
+            //ProcessDelegate = new VoidDelegate(Process);
+            //Listener = new Thread(Listen);
+            //Listener.Start();
 
-		public void Listen ()
-		{
-			string rec;
-			while ((rec = I.Read ()) != "Removed$")
-				try {
-					I.Clean();
-					Invoke (ProcessDelegate, rec);
-				//Thread.Sleep (100);//sleep(1000);
-					//rec = "";
-				} catch {
-				}
-		}
+        }
+        public void Listen()
+        {
+            string rec;
+            while ((rec = I.Read()) != "Removed$")
+                try
+                {
+                    I.Clean();
+                    ///
+                    /// Todo: Melhorar
+                    /// _game.Invoke(ProcessDelegate, rec);
+                    //Thread.Sleep (100);//sleep(1000);
+                    //rec = "";
+                    Process(rec);
+                }
+                catch
+                {
+                }
+        }
 
         public void Process(string a)
         {
@@ -79,8 +95,8 @@ namespace Client
             if (command[0] == "Joined") // Joined$position$name$money$
             {
                 int pos = int.Parse(command[1]);
-				players [pos].Posintion = pos;
-				players[pos].Name = command[2];
+                players[pos].Posintion = pos;
+                players[pos].Name = command[2];
                 players[pos].Money = int.Parse(command[3]);
                 Write(players[pos].Name + " has joined the table with " + players[pos].Money + "$");
             }
@@ -128,7 +144,7 @@ namespace Client
                 players[pos].Money -= amount;
                 if (players[pos].Name == I.Name)
                     I.Money -= amount;
-                Pot.Text = (int.Parse(Pot.Text) + amount) + "";
+                _game.Pot.Text = (int.Parse(_game.Pot.Text) + amount) + "";
                 Write(players[pos].Name + " has submitted a small blind of " + amount);
             }
             else if (command[0] == "BigBlind") // BigBlind$position$amount$
@@ -139,9 +155,9 @@ namespace Client
                 players[pos].Money -= amount;
                 if (players[pos].Name == I.Name)
                     I.Money -= amount;
-                Pot.Text = (int.Parse(Pot.Text) + amount) + "";
+                _game.Pot.Text = (int.Parse(_game.Pot.Text) + amount) + "";
                 Write(players[pos].Name + " has submitted a big blind of " + amount);
-            }
+            }/*
             else if (command[0] == "Pocket") // Pocket$id$number(2-14)$shape(1-4)$
             {
 				Image Card = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
@@ -157,35 +173,35 @@ namespace Client
                     Pocket1.Show();
                     Write("Pocket Card 2: " + Number(command[2]) + Shape(command[3]));
                 }
-            }
+            }*/
             else if (command[0] == "Community") // Community$id$number(2-14)$shape(1-4)$
-			{   
-				Image Card = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
+            {
+                Image Card = Image.FromFile("Data" + Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
                 switch (command[1])
                 {
                     case "0":
-                        Community0.BackgroundImage = Card;
-                        Community0.Show();
+                        _game.Community0.BackgroundImage = Card;
+                        _game.Community0.Show();
                         Write("Community Card 1: " + Number(command[2]) + Shape(command[3]));
                         break;
                     case "1":
-                        Community1.BackgroundImage = Card;
-                        Community1.Show();
+                        _game.Community1.BackgroundImage = Card;
+                        _game.Community1.Show();
                         Write("Community Card 2: " + Number(command[2]) + Shape(command[3]));
                         break;
                     case "2":
-                        Community2.BackgroundImage = Card;
-                        Community2.Show();
+                        _game.Community2.BackgroundImage = Card;
+                        _game.Community2.Show();
                         Write("Community Card 3: " + Number(command[2]) + Shape(command[3]));
                         break;
                     case "3":
-                        Community3.BackgroundImage = Card;
-                        Community3.Show();
+                        _game.Community3.BackgroundImage = Card;
+                        _game.Community3.Show();
                         Write("Community Card 4: " + Number(command[2]) + Shape(command[3]));
                         break;
                     default:
-                        Community4.BackgroundImage = Card;
-                        Community4.Show();
+                        _game.Community4.BackgroundImage = Card;
+                        _game.Community4.Show();
                         Write("Community Card 5: " + Number(command[2]) + Shape(command[3]));
                         break;
                 }
@@ -193,8 +209,8 @@ namespace Client
             else if (command[0] == "Hand") // Hand$position$number(2-14)$shape(1-4)$number(2-14)$shape(1-4)$
             {
                 int pos = int.Parse(command[1]);
-				players[pos].HoleCard0.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
-				players[pos].HoleCard1.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar + int.Parse(command[4]) + "_" + int.Parse(command[5]) + ".gif");
+                players[pos].HoleCard0.BackgroundImage = Image.FromFile("Data" + Path.DirectorySeparatorChar + int.Parse(command[2]) + "_" + int.Parse(command[3]) + ".gif");
+                players[pos].HoleCard1.BackgroundImage = Image.FromFile("Data" + Path.DirectorySeparatorChar + int.Parse(command[4]) + "_" + int.Parse(command[5]) + ".gif");
                 Write(players[pos].Name + " shows " + Number(command[2]) + Shape(command[3]) + " " + Number(command[4]) + Shape(command[5]));
             }
             else if (command[0] == "Win") // Win$position$pot$
@@ -205,24 +221,24 @@ namespace Client
                 if (players[pos].Name == I.Name)
                     I.Money += amount;
                 Write(players[pos].Name + " wins a pot of " + amount + "$");
-                Pot.Text = "0";
+                _game.Pot.Text = "0";
                 foreach (Player p in players)
                 {
-					p.HoleCard0.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar+"back.jpg");
+                    p.HoleCard0.BackgroundImage = Image.FromFile("Data" + Path.DirectorySeparatorChar + "back.jpg");
                     players[pos].HoleCard0.Show();
-					p.HoleCard1.BackgroundImage = Image.FromFile("Data"+Path.DirectorySeparatorChar+"back.jpg");
+                    p.HoleCard1.BackgroundImage = Image.FromFile("Data" + Path.DirectorySeparatorChar + "back.jpg");
                     players[pos].HoleCard1.Show();
                     players[pos].Action.Hide();
                 }
                 players[button].Button.Hide();
-                HideButtons();
-                Community0.Hide();
-                Community1.Hide();
-                Community2.Hide();
-                Community3.Hide();
-                Community4.Hide();
-                Pocket0.Hide();
-                Pocket1.Hide();
+                _game.HideButtons();
+                _game.Community0.Hide();
+                _game.Community1.Hide();
+                _game.Community2.Hide();
+                _game.Community3.Hide();
+                _game.Community4.Hide();
+                //Pocket0.Hide();
+                //Pocket1.Hide();
             }
             else if (command[0] == "SidePot") // SidePot$position$amount
             {
@@ -232,7 +248,7 @@ namespace Client
                 if (players[pos].Name == I.Name)
                     I.Money += amount;
                 Write(players[pos].Name + " wins a side pot of " + amount + "$");
-                Pot.Text = (int.Parse(Pot.Text) - amount) + "";
+                _game.Pot.Text = (int.Parse(_game.Pot.Text) - amount) + "";
             }
             else if (command[0] == "Playing") // Playing$position
                 players[int.Parse(command[1])].Action.Show();
@@ -243,34 +259,34 @@ namespace Client
                 int tmp;
                 if (bet - inround != 0)
                 {
-                    Call.Text = "Call " + (bet - inround);
-                    Raise.Text = "Raise";
+                    //Call.Text = "Call " + (bet - inround);
+                    //Raise.Text = "Raise";
                     tmp = 2 * bet - inround;
                 }
                 else
                 {
-                    Call.Text = "Check";
-                    Raise.Text = "Bet";
+                    //Call.Text = "Check";
+                    //Raise.Text = "Bet";
                     tmp = bb - inround;
                 }
-                RaiseAmount.Text = tmp + "";
-                RaiseBar.Minimum = tmp;
-                RaiseBar.Maximum = I.Money;
-                RaiseBar.SmallChange = bb;
-                RaiseBar.LargeChange = 5 * bb;
-                ShowButtons();
+                //RaiseAmount.Text = tmp + "";
+                //RaiseBar.Minimum = tmp;
+                //RaiseBar.Maximum = I.Money;
+                //RaiseBar.SmallChange = bb;
+                //RaiseBar.LargeChange = 5 * bb;
+                _game.ShowButtons();
                 if (bet - inround > I.Money)
                 {
-                    Call.Text = "All In";
-                    RaiseBar.Hide();
-                    RaiseAmount.Hide();
-                    Raise.Hide();
+                    // Call.Text = "All In";
+                    //RaiseBar.Hide();
+                    //RaiseAmount.Hide();
+                    //Raise.Hide();
                 }
                 else if (tmp > I.Money)
                 {
-                    Raise.Text = "All In";
-                    RaiseBar.Hide();
-                    RaiseAmount.Hide();
+                    //Raise.Text = "All In";
+                    //RaiseBar.Hide();
+                    //RaiseAmount.Hide();
                 }
                 //Thread.Sleep(10000);
             }
@@ -279,7 +295,7 @@ namespace Client
                 int pos = int.Parse(command[1]);
                 int amount = int.Parse(command[2]);
                 players[pos].Money -= amount;
-                Pot.Text = (int.Parse(Pot.Text) + amount) + "";
+                _game.Pot.Text = (int.Parse(_game.Pot.Text) + amount) + "";
                 Write(players[pos].Name + " calls and adds " + amount + "$ to the pot");
                 players[pos].Action.Hide();
             }
@@ -288,7 +304,7 @@ namespace Client
                 int pos = int.Parse(command[1]);
                 int amount = int.Parse(command[2]);
                 players[pos].Money -= amount;
-                Pot.Text = (int.Parse(Pot.Text) + amount) + "";
+                _game.Pot.Text = (int.Parse(_game.Pot.Text) + amount) + "";
                 Write(players[pos].Name + " raises to " + int.Parse(command[3]));
                 players[pos].Action.Hide();
             }
@@ -310,23 +326,23 @@ namespace Client
                 int pos = int.Parse(command[1]);
                 Write(players[pos].Name + " moves All-In");
                 players[pos].Action.Hide();
-                Pot.Text = (int.Parse(Pot.Text) + players[pos].Money) + "";
+                _game.Pot.Text = (int.Parse(_game.Pot.Text) + players[pos].Money) + "";
                 players[int.Parse(command[1])].Money = 0;
             }
 
             else if (command[0] == "Kick") // Kick$
             {
                 I.Write("Stand$");
-                Stand.Hide();
-                Sit.Show();
+                ////Stand.Hide();
+                //_game.button0.Show();
             }
         }
 
         public void Write(string a)
         {
-            Log.Text += a + Environment.NewLine;
-            Log.SelectionStart = Log.Text.Length;
-            Log.ScrollToCaret();
+            _game.Log.Text += a + Environment.NewLine;
+            _game.Log.SelectionStart = _game.Log.Text.Length;
+            _game.Log.ScrollToCaret();
         }
 
         public char Shape(string a)
@@ -363,126 +379,9 @@ namespace Client
             }
         }
 
-        private void TableClosing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            if (Fold.Visible)
-            {
-                I.Write("Fold$");
-                Thread.Sleep(500);
-            }
-            I.Write("Stand$");
-            I.Write("Leave$");
-            //lobby.Show();
-        }
 
-        private static int act=0;
-        private static string[] acoes = {
-"@nada1$",
-"@nada2$",
-"Sitting$0$eduardo$100$",
-"Joined$1$teste1a$200$",
-"Joined$2$teste2b$400$",
-"Joined$3$teste3c$500$", 
-"Joined$4$teste4d$500$", 
-"Joined$5$teste5e$500$",
-"Joined$6$teste6f$500$",
-"Joined$7$teste7f$500$",
-"Button$1$",
-"Dealer$1$",
-"SmallBlind$2$25$",
-"BigBlind$3$50$",
-"Hand$1$14$1$14$2$",
-"Hand$2$13$1$13$2$",
-"Playing$1$",
-"Waiting$50$75$",
-"Playing$2$",
-"Waiting$50$75$"
-        };
-        private void Sit_Click(object sender, EventArgs e)
-        {
-            //I.Write("Sit$");
-            if (act < acoes.Length-1)
-            {
-                I.Write(acoes[act]);
-                act++;
-            }
-            else
-                act = 0;
 
-            //Sit.Hide();
-            //Stand.Show();
-            Invoke(ProcessDelegate, acoes[act]);//I.Read());
 
-        }
 
-        private void Call_Click(object sender, EventArgs e)
-        {
-            if (Call.Text == "All In")
-            {
-                I.Write("AllIn$");
-                I.Money = 0;
-            }
-            else
-            {
-                I.Write("Call$");
-                if (Call.Text != "Check")
-                    I.Money -= int.Parse(Call.Text.Substring(Call.Text.IndexOf(" ") + 1));
-            }
-            HideButtons();
-        }
-
-        private void Raise_Click(object sender, EventArgs e)
-        {
-            if (int.Parse(RaiseAmount.Text) == I.Money || Raise.Text == "All In")
-            {
-                I.Write("AllIn$");
-                I.Money = 0;
-            }
-            else
-            {
-                I.Write("Raise$" + RaiseAmount.Text + "$");
-                I.Money -= int.Parse(RaiseAmount.Text);
-            }
-            HideButtons();
-        }
-
-        private void Fold_Click(object sender, EventArgs e)
-        {
-            I.Write("Fold$");
-            HideButtons();
-        }
-
-        private void HideButtons()
-        {
-            RaiseBar.Hide();
-            Call.Hide();
-            Raise.Hide();
-            Fold.Hide();
-            RaiseAmount.Hide();
-        }
-
-        private void ShowButtons()
-        {
-            RaiseBar.Show();
-            Call.Show();
-            Raise.Show();
-            Fold.Show();
-            RaiseAmount.Show();
-        }
-
-        private void Stand_Click(object sender, EventArgs e)
-        {
-            I.Write("Fold$");
-            Thread.Sleep(500);
-            HideButtons();
-            I.Write("Stand$");
-            Stand.Hide();
-            Sit.Show();
-        }
-
-        private void RaiseBar_Scroll(object sender, System.EventArgs e)
-        {
-            RaiseAmount.Text = RaiseBar.Value + "";
-        }
     }
 }

@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Client
+namespace PokerGame
 {
     public partial class Login : Form
     {

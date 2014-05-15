@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Client
+namespace PokerGame
 {
     public partial class Lobby : Form
     {
@@ -55,7 +55,7 @@ namespace Client
             if (listView1.SelectedItems.Count == 1)
             {
                 I.Write("Spectate$" + listView1.SelectedItems[0].SubItems[0].Text + "$");
-                Table t = new Table();//this);
+                Game t = new Game();//this);
                 t.Text = listView1.SelectedItems[0].SubItems[1].Text + "   " + listView1.SelectedItems[0].SubItems[2].Text;
                 t.Show();
                 this.Hide();

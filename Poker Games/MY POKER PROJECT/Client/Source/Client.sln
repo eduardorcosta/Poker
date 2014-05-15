@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{93CD030F-A4A5-4B2B-A980-E24D70B211EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerGame", "Client\PokerGame.csproj", "{93CD030F-A4A5-4B2B-A980-E24D70B211EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "..\..\Server\Source\Server\Server.csproj", "{56BFECE0-B7F6-421E-BD39-EA8F605964C7}"
 EndProject
