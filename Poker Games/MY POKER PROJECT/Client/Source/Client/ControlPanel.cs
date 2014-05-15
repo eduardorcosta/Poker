@@ -59,13 +59,13 @@ namespace PokerGame
             */
 
             //Play Button
-            drawButton1();
+            //drawButton1();
 
             // Backward Button
             //drawButton0();
-            drawButton(button0, global::PokerGame.Properties.Resources.backward, new System.Drawing.Point(20, 50),false);
-
-            drawButton(button2, global::PokerGame.Properties.Resources.reset, new System.Drawing.Point(127,48),true);//false);
+            drawButton(button0, global::PokerGame.Properties.Resources.backward, new System.Drawing.Point(52, 71),false);
+            drawButton(button1, global::PokerGame.Properties.Resources.resume, new System.Drawing.Point(101, 71), false);
+            drawButton(button2, global::PokerGame.Properties.Resources.reset, new System.Drawing.Point(146,71),false);
 
 
 /*
@@ -91,7 +91,7 @@ namespace PokerGame
             g_path5.AddEllipse(5, 5, 30, 30);
             button5.Region = new Region(g_path5);
         }
-        private void drawButton(Button buttonI,Bitmap buttonBitmap,Point initialPos,Boolean debug)
+        private void drawButton(Button buttonI,Bitmap buttonBitmap,Point middlePos, Boolean debug)
         {
             // sempre comeca no 0,0 pois eh no controle
             buttonI.Location = new Point(0, 0);
@@ -120,8 +120,8 @@ namespace PokerGame
 
             //Point backwardPos = new Point(23 - 2, 55 - 3);//73,42);
             //Rectangle button0Location = new Rectangle(initialPos, new Size(55, 37));
-            
-            Rectangle buttonHole = new Rectangle(initialPos, buttonHoleSize);//new Size(55, 37));
+            Point cornerPosition = new Point(middlePos.X - buttonHoleSize.Width / 2, middlePos.Y - buttonHoleSize.Height / 2);
+            Rectangle buttonHole = new Rectangle(cornerPosition, buttonHoleSize);//new Size(55, 37));
             GraphicsPath g_path = new GraphicsPath();
             
             //g_path.AddEllipse(5, 5, 30, 30);
@@ -132,9 +132,9 @@ namespace PokerGame
             buttonI.BringToFront();
             
             if (debug)
-                button0.BackColor = Color.Cyan;
+                buttonI.BackColor = Color.Cyan;
             if (!debug)
-                canvas.DrawImage(buttonBitmap,initialPos); //global::PokerGame.Properties.Resources.backward, resumePos);
+                canvas.DrawImage(buttonBitmap,cornerPosition); //global::PokerGame.Properties.Resources.backward, resumePos);
 
         }
         private void drawButton0()
