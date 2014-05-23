@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FileSystemWatcher">
+</Property><Property Name="Solution File" Value="Z:\Projects\Poker\FileSystemWatcher\FileSystemWatcher.sln">
+</Property><Property Name="User Options File" Value="Z:\Projects\Poker\FileSystemWatcher\FileSystemWatcher.suo">
+</Property><Property Name="Date" Value="terça-feira, 20 de maio de 2014">
+</Property><Property Name="Time" Value="19:51">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="FileSystemWatcher.sln" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher.sln">
+</Event><Event ErrorLevel="0" Project="" Source="FileSystemWatcher.suo" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher.suo">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\FileSystemWatcher.csproj" Description="Project file successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\FileSystemWatcher.csproj">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\FileSystemWatcher.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\FileSystemWatcher.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Form1.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Form1.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Form1.Designer.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Program.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Program.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Properties\AssemblyInfo.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Properties\Resources.Designer.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Properties\Settings.Designer.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\FileReverseRead.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\FileReverseRead.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\HandRead.cs" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\HandRead.cs">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Properties\Settings.settings" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\FileSystemWatcher.resx" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\FileSystemWatcher.resx">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Form1.resx" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Form1.resx">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\Properties\Resources.resx" Description="File successfully backed up as Z:\Projects\Poker\FileSystemWatcher\Backup\FileSystemWatcher\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\FileSystemWatcher.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FileSystemWatcher" Source="FileSystemWatcher\FileSystemWatcher.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FileSystemWatcher.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FileSystemWatcher.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FileSystemWatcher" Source="FileSystemWatcher\FileSystemWatcher.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -466,9 +466,30 @@ namespace PokerGame.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap border_glow1 {
+            get {
+                object obj = ResourceManager.GetObject("border_glow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap border1 {
+            get {
+                object obj = ResourceManager.GetObject("border1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap borderb {
             get {
                 object obj = ResourceManager.GetObject("borderb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap borderb1 {
+            get {
+                object obj = ResourceManager.GetObject("borderb1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -651,6 +672,13 @@ namespace PokerGame.Properties {
         internal static System.Drawing.Bitmap default_avatar {
             get {
                 object obj = ResourceManager.GetObject("default_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap default_avatar1 {
+            get {
+                object obj = ResourceManager.GetObject("default_avatar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -851,9 +879,23 @@ namespace PokerGame.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap status1 {
+            get {
+                object obj = ResourceManager.GetObject("status1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap statusbold {
             get {
                 object obj = ResourceManager.GetObject("statusbold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap statusbold1 {
+            get {
+                object obj = ResourceManager.GetObject("statusbold1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -868,6 +910,13 @@ namespace PokerGame.Properties {
         internal static System.Drawing.Bitmap table_normal {
             get {
                 object obj = ResourceManager.GetObject("table_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap table1 {
+            get {
+                object obj = ResourceManager.GetObject("table1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

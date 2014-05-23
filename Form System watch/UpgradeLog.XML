@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DirectoryMonitorWinForm">
+</Property><Property Name="Solution File" Value="Z:\Projects\Poker\Form System watch\DirectoryMonitorWinForm.sln">
+</Property><Property Name="User Options File" Value="Z:\Projects\Poker\Form System watch\DirectoryMonitorWinForm.suo">
+</Property><Property Name="Date" Value="terça-feira, 20 de maio de 2014">
+</Property><Property Name="Time" Value="19:44">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DirectoryMonitorWinForm.sln" Description="File successfully backed up as Z:\Projects\Poker\Form System watch\Backup\DirectoryMonitorWinForm.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DirectoryMonitorWinForm.suo" Description="File successfully backed up as Z:\Projects\Poker\Form System watch\Backup\DirectoryMonitorWinForm.suo">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorWinForm.csproj" Description="Project file successfully backed up as Z:\Projects\Poker\Form System watch\Backup\DirectoryMonitorWinForm.csproj">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorWinForm.csproj.user" Description="Project user file successfully backed up as Z:\Projects\Poker\Form System watch\Backup\DirectoryMonitorWinForm.csproj.user">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="AssemblyInfo.cs" Description="File successfully backed up as Z:\Projects\Poker\Form System watch\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorForm.cs" Description="File successfully backed up as Z:\Projects\Poker\Form System watch\Backup\DirectoryMonitorForm.cs">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="App.ico" Description="File successfully backed up as Z:\Projects\Poker\Form System watch\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorForm.resx" Description="File successfully backed up as Z:\Projects\Poker\Form System watch\Backup\DirectoryMonitorForm.resx">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorWinForm.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorWinForm.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DirectoryMonitorWinForm.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DirectoryMonitorWinForm.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DirectoryMonitorWinForm" Source="DirectoryMonitorWinForm.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

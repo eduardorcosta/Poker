@@ -19,7 +19,7 @@ namespace PokerGame
         public ControlPanel()
         {
             InitializeComponent();
-            
+
             // init canvas
             this.mainCanvas.BackColor = System.Drawing.Color.Transparent;
             this.mainCanvas.Location = new System.Drawing.Point(0, 0);
@@ -28,18 +28,18 @@ namespace PokerGame
             mainCanvas.Image = surface;
             device = Graphics.FromImage(surface);
             // end canvas
-            
+
             // add background
             controlsImage = new Bitmap(global::PokerGame.Properties.Resources.face);
             device.DrawImage(controlsImage, 0, 0);
 
 
-            this.BackColor = System.Drawing.Color.White;
+            //this.BackColor = System.Drawing.Color.White;
             //Control panel
             //System.Drawing.Point control_P = new System.Drawing.Point(400, 425);
-            
-            
-            
+
+
+
 
             /*
             // Help na posicao
@@ -63,17 +63,21 @@ namespace PokerGame
 
             // Backward Button
             //drawButton0();
-            drawButton(button0, global::PokerGame.Properties.Resources.backward, new System.Drawing.Point(52, 71),false);
+            drawButton(button0, global::PokerGame.Properties.Resources.backward, new System.Drawing.Point(52, 71), false);
             drawButton(button1, global::PokerGame.Properties.Resources.resume, new System.Drawing.Point(101, 71), false);
-            drawButton(button2, global::PokerGame.Properties.Resources.reset, new System.Drawing.Point(146,71),false);
+            drawButton(button2, global::PokerGame.Properties.Resources.reset, new System.Drawing.Point(146, 71), false);
+            drawButton(button3, global::PokerGame.Properties.Resources.forward, new System.Drawing.Point(191, 71), false);
+            drawButton(button4, global::PokerGame.Properties.Resources.prev, new System.Drawing.Point(262, 70), false);
+            drawButton(button5, global::PokerGame.Properties.Resources.next, new System.Drawing.Point(293, 83), false);
 
 
-/*
-            // Stop Button
-            System.Drawing.Drawing2D.GraphicsPath g_path2 = new System.Drawing.Drawing2D.GraphicsPath();
-            g_path2.AddEllipse(5, 5, 30, 30);
-            button2.Region = new Region(g_path2);
-            */
+            /*
+                        // Stop Button
+                        System.Drawing.Drawing2D.GraphicsPath g_path2 = new System.Drawing.Drawing2D.GraphicsPath();
+                        g_path2.AddEllipse(5, 5, 30, 30);
+                        button2.Region = new Region(g_path2);
+                        */
+            /*
             // Forward Button
             System.Drawing.Drawing2D.GraphicsPath g_path3 = new System.Drawing.Drawing2D.GraphicsPath();
             g_path3.AddEllipse(5, 5, 30, 30);
@@ -90,8 +94,9 @@ namespace PokerGame
             System.Drawing.Drawing2D.GraphicsPath g_path5 = new System.Drawing.Drawing2D.GraphicsPath();
             g_path5.AddEllipse(5, 5, 30, 30);
             button5.Region = new Region(g_path5);
+             */
         }
-        private void drawButton(Button buttonI,Bitmap buttonBitmap,Point middlePos, Boolean debug)
+        private void drawButton(Button buttonI, Bitmap buttonBitmap, Point middlePos, Boolean debug)
         {
             // sempre comeca no 0,0 pois eh no controle
             buttonI.Location = new Point(0, 0);
@@ -101,7 +106,7 @@ namespace PokerGame
 
 
             //Bitmap resume = new Bitmap(global::PokerGame.Properties.Resources.resume);
-            
+
             // abrir um buraco do tamanho do sprite...
             Size buttonHoleSize = buttonBitmap.Size;
             buttonHoleSize.Width = buttonHoleSize.Width / 3 + 1; // tres frames
@@ -111,7 +116,7 @@ namespace PokerGame
             //button0.BackColor = System.Drawing.Color.Blue ;
             //System.Drawing.Point InitialPos = new System.Drawing.Point(20, 50);
             //button0.Location = resumePos;
-            
+
             Bitmap surface = new Bitmap(buttonControlSize.Width, buttonControlSize.Height);// mainCanvas.Image = surface;
             Graphics canvas = Graphics.FromImage(surface);
             canvas.DrawImage(controlsImage, new Point(0, 0));
@@ -123,18 +128,18 @@ namespace PokerGame
             Point cornerPosition = new Point(middlePos.X - buttonHoleSize.Width / 2, middlePos.Y - buttonHoleSize.Height / 2);
             Rectangle buttonHole = new Rectangle(cornerPosition, buttonHoleSize);//new Size(55, 37));
             GraphicsPath g_path = new GraphicsPath();
-            
+
             //g_path.AddEllipse(5, 5, 30, 30);
             //g_path.AddEllipse(button0Location);
-            
+
             g_path.AddRectangle(buttonHole);
             buttonI.Region = new Region(g_path);
             buttonI.BringToFront();
-            
+
             if (debug)
                 buttonI.BackColor = Color.Cyan;
             if (!debug)
-                canvas.DrawImage(buttonBitmap,cornerPosition); //global::PokerGame.Properties.Resources.backward, resumePos);
+                canvas.DrawImage(buttonBitmap, cornerPosition); //global::PokerGame.Properties.Resources.backward, resumePos);
 
         }
         private void drawButton0()
@@ -249,7 +254,8 @@ namespace PokerGame
             Graphics.FromImage(resume).SmoothingMode = SmoothingMode.AntiAlias;
             //button1.Visible = false;
             //button1.Enabled = true;
-            
+
         }
+
     }
 }

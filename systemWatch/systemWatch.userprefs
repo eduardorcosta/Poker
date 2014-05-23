@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="systemWatch/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../FileSystemWatcher/FileSystemWatcher/HandRead.cs">
     <Files>
       <File FileName="systemWatch/Program.cs" Line="64" Column="4" />
+      <File FileName="../Form System watch/DirectoryMonitorForm.cs" Line="1" Column="1" />
+      <File FileName="../FileSystemWatcher/FileSystemWatcher/HandRead.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

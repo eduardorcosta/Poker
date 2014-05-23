@@ -13,7 +13,7 @@ namespace PokerGame
     {
         int button;
         int bb;
-        Player[] players = new Player[8];
+        Player[] players = new Player[9];
 
         /// <summary>
         /// Todo: Melhorar
@@ -23,25 +23,40 @@ namespace PokerGame
 
         Game _game;
 
-        public Table(Game game)
+        public Table(Game game,Graphics device)
         {
             _game = game;
-            players[7] = new Player(249, 60);
-            players[6] = new Player(87, 126);
-            players[5] = new Player(87, 309);
-            players[4] = new Player(249, 373);
-            players[3] = new Player(483, 373);
-            players[2] = new Player(667, 309);
-            players[1] = new Player(667, 126);
-            players[0] = new Player(483, 60);
-            for (int i = 0; i < players.Length; i++)
+            players[8] = new Player(device, 175, 51);
+            players[7] = new Player(device,34, 102);
+            players[6] = new Player(device,0, 199);
+            players[5] = new Player(device,63, 321);
+            players[4] = new Player(device,316,359);
+            players[3] = new Player(device,554,321);
+            players[2] = new Player(device,623, 199);
+            players[1] = new Player(device,545,102);
+            players[0] = new Player(device,398,51);
+            for (int i = 0; i < Convert.ToInt32(_game.currHand.tableSize); i++)
+            {
+                players[i].Name=_game.currHand.players[i].name;
+                players[i].Stack=_game.currHand.players[i].stack;
+            }
+            game.Log.Clear();
+            game.Log.AppendText(_game.currHand.tableName + " " + _game.currHand.tableSize + " max");
+            /*
+            for (int i = 0; i < players.Length-1; i++)
             {
                 game.Controls.Add(players[i].NameAsControl);
+                players[i].NameAsControl.BringToFront();
                 game.Controls.Add(players[i].MoneyAsControl);
+                players[i].MoneyAsControl.BringToFront();
                 game.Controls.Add(players[i].HoleCard0);
+                players[i].HoleCard0.BringToFront();
                 game.Controls.Add(players[i].HoleCard1);
+                players[i].HoleCard1.BringToFront();
                 game.Controls.Add(players[i].Button);
+                players[i].Button.BringToFront();
                 game.Controls.Add(players[i].Action);
+                players[i].Action.BringToFront();
             }/*
             string p = I.Read();
             for (int i = 0; p.IndexOf('@') != -1; i++)
@@ -55,7 +70,7 @@ namespace PokerGame
                 Process(h.Substring(0, h.IndexOf('@')));
                 h = h.Remove(0, h.IndexOf('@') + 1);
             }*/
-            game.Log.Clear();
+            
             
             
             
@@ -113,10 +128,10 @@ namespace PokerGame
                 int pos = int.Parse(command[1]);
                 Write(players[pos].Name + " has left the table");
                 players[pos].Name = "Open";
-                players[pos].MoneyAsControl.Text = "Seat";
+                //players[pos].MoneyAsControl.Text = "Seat";
                 players[pos].HoleCard0.Hide();
                 players[pos].HoleCard1.Hide();
-                players[pos].Action.Hide();
+                //players[pos].Action.Hide();
             }
             else if (command[0] == "Button") // Button$position$
             {
@@ -124,12 +139,12 @@ namespace PokerGame
                 if (button == 0)
                     Write(players[pos].Name + " has been randomly chosen to be the dealer");
                 button = pos;
-                players[button].Button.Show();
+                //players[button].Button.Show();
             }
             else if (command[0] == "Dealer") // Dealer$position$
             {
                 button = int.Parse(command[1]);
-                players[button].Button.Show();
+                //players[button].Button.Show();
                 foreach (Player p in players)
                     if (p.Name != "Open")
                     {
@@ -228,9 +243,9 @@ namespace PokerGame
                     players[pos].HoleCard0.Show();
                     p.HoleCard1.BackgroundImage = Image.FromFile("Data" + Path.DirectorySeparatorChar + "back.jpg");
                     players[pos].HoleCard1.Show();
-                    players[pos].Action.Hide();
+                    //players[pos].Action.Hide();
                 }
-                players[button].Button.Hide();
+                //players[button].Button.Hide();
                 _game.HideButtons();
                 _game.Community0.Hide();
                 _game.Community1.Hide();
@@ -250,8 +265,8 @@ namespace PokerGame
                 Write(players[pos].Name + " wins a side pot of " + amount + "$");
                 _game.Pot.Text = (int.Parse(_game.Pot.Text) - amount) + "";
             }
-            else if (command[0] == "Playing") // Playing$position
-                players[int.Parse(command[1])].Action.Show();
+            //else if (command[0] == "Playing") // Playing$position
+                //players[int.Parse(command[1])].Action.Show();
             else if (command[0] == "Waiting") // Waiting$bet$inroundmoney$
             {
                 int bet = int.Parse(command[1]);
@@ -297,7 +312,7 @@ namespace PokerGame
                 players[pos].Money -= amount;
                 _game.Pot.Text = (int.Parse(_game.Pot.Text) + amount) + "";
                 Write(players[pos].Name + " calls and adds " + amount + "$ to the pot");
-                players[pos].Action.Hide();
+                //players[pos].Action.Hide();
             }
             else if (command[0] == "Raise") // Raise$position$amount$total
             {
@@ -306,7 +321,7 @@ namespace PokerGame
                 players[pos].Money -= amount;
                 _game.Pot.Text = (int.Parse(_game.Pot.Text) + amount) + "";
                 Write(players[pos].Name + " raises to " + int.Parse(command[3]));
-                players[pos].Action.Hide();
+                //players[pos].Action.Hide();
             }
             else if (command[0] == "Fold") // Fold$position$
             {
@@ -314,18 +329,18 @@ namespace PokerGame
                 players[pos].HoleCard0.Hide();
                 players[pos].HoleCard1.Hide();
                 Write(players[pos].Name + " folds");
-                players[pos].Action.Hide();
+                //players[pos].Action.Hide();
             }
             else if (command[0] == "Check") // Check$position$
             {
                 Write(players[int.Parse(command[1])].Name + " checks");
-                players[int.Parse(command[1])].Action.Hide();
+                //players[int.Parse(command[1])].Action.Hide();
             }
             else if (command[0] == "AllIn") // Allin$position$
             {
                 int pos = int.Parse(command[1]);
                 Write(players[pos].Name + " moves All-In");
-                players[pos].Action.Hide();
+                //players[pos].Action.Hide();
                 _game.Pot.Text = (int.Parse(_game.Pot.Text) + players[pos].Money) + "";
                 players[int.Parse(command[1])].Money = 0;
             }

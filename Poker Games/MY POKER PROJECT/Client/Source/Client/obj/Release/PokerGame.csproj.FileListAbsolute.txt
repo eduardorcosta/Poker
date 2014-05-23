@@ -65,3 +65,4 @@ Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Client\Source\Client\obj\Release\
 Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Client\Source\Client\obj\Release\Client.exe
 Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Client\Source\Client\obj\Release\Client.pdb
 Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Client\Source\Client\obj\Release\PokerGame.ControlPanel.resources
+Z:\Projects\Poker\Poker Games\MY POKER PROJECT\Client\Source\Client\bin\Release\SampleHandFile.txt
